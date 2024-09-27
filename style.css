@@ -148,9 +148,42 @@ button {
     width: 100%;
     display: flex;
     align-items: start;
+
     gap: 20%;
+    h3 {
+      font-size: 16px;
+    }
+
     .spans span {
       margin: 0 10px;
+    }
+    .spans span:nth-child(1) {
+      color: rgb(31, 189, 31);
+    }
+    .spans span:nth-child(2) {
+      color: rgb(216, 41, 41);
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    li {
+      padding: 10px;
+      gap: 6px;
+      h3 {
+        font-size: 16px;
+      }
+      .spans span {
+        margin: 0 10px;
+        font-size: 14px;
+      }
+      .spans span:nth-child(1) {
+        color: rgb(31, 189, 31);
+      }
+      .spans span:nth-child(2) {
+        color: rgb(216, 41, 41);
+      }
     }
   }
 }
